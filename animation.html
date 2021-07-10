@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .field{
+            background-color: darkgreen;
+            border:2px solid khaki;
+            height: 550px;
+            width:100%;
+            border-radius: ;
+            position:relative;
+            
+        }
+        .pitch{
+            width:700px;
+            height: 100px;
+            background-color: rgb(155, 135, 99);
+            position:absolute;
+            top:260px;
+            right:50px;
+            box-shadow: 20px 20px 50px;
+        }
+        .cricketer{
+            position:absolute;
+            top:120px;
+            right:0px;
+            transition:transform 0.3s linear ;
+            text-shadow: 20px 20px 40px;
+            
+        }
+        
+        .ball{
+            width:25px;
+            height:25px;
+            background-color:orange;
+            border-radius: 50%;
+            position:absolute;
+            top:300px;
+            left:1087px;
+            transition:transform .7s linear 0.3s;
+        }
+        .field:hover .cricketer{
+            transform:rotate(30deg);
+            transform-origin:top left;
+        }
+        
+        .field:hover .ball{
+            transform:translate(-945px,-193px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="field" title="click on the cricketer">
+        <div class="pitch">
+
+        </div>
+        <div class="div">
+           <img class="cricketer"src="images/cricketerjpg-removebg-preview.png" alt="">
+        </div>
+        
+        <div class="ball">
+        
+        </div>
+        <img src="images/cathingball-removebg-preview.png" alt="">
+    </div>
+</body>
+</html>
